@@ -21,20 +21,22 @@ const [
   handWritingTime,
 ] = counterNumbers;
 
-let textareaText;
-let wordsLength;
-let uniqueWordsLength;
-let charactersLength;
-let charactersNoSpacesLength;
-let sentenceLength;
-let longestSentenceLength;
-let shortestSentenceLength;
-let avgSentenceLength;
-let avgWordLength;
-let paragraphsLength;
-let readingTimeLength;
-let speakingTimeLength;
-let handWritingTimeLength;
+let [
+  textareaText,
+  wordsLength,
+  uniqueWordsLength,
+  charactersLength,
+  charactersNoSpacesLength,
+  sentenceLength,
+  longestSentenceLength,
+  shortestSentenceLength,
+  avgSentenceLength,
+  avgWordLength,
+  paragraphsLength,
+  readingTimeLength,
+  speakingTimeLength,
+  handWritingTimeLength,
+] = [];
 
 const calculateWidth = (item, length) =>
   (item.style.width = `${String(length).length + 1}rem`);
